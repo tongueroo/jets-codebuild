@@ -20,7 +20,7 @@ You'll need to use your own value.
 
 This branch shows how to create 2 separate CodeBuild projects for unit tests and deployment. Some advantages:
 
-* The projects are decouple and you can run them separately.
+* The projects are decoupled and you can run them separately.
 * Only the deploy project requires IAM access to create the AWS resources.
 
 Unit tests:
