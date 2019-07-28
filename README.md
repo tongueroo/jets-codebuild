@@ -18,9 +18,17 @@ You'll need to use your own value.
 
 ## CodeBuild
 
-    cb deploy demo # creates the CodeBuild Project
-    cb start demo  # starts a build
-    cb start demo -b mybranch  # starts a build on a specific branch. remember to git push
+Unit tests:
+
+    cb deploy demo --type unit # creates the CodeBuild Project
+    cb start demo --type unit  # starts a build
+    cb start demo --type unit -b mybranch  # starts a build on a specific branch. remember to git push
+
+Deploy:
+
+    cb deploy demo --type deploy # creates the CodeBuild Project
+    cb start demo --type deploy  # starts a build
+    cb start demo --type deploy -b mybranch  # starts a build on a specific branch. remember to git push
 
 ## Notes
 
