@@ -9,12 +9,7 @@ phases:
       - apt-get install -y rsync zip
   build:
     commands:
-      - echo Build started on `date`
+      - export JETS_AGREE=yes
       - sed -i '/BUNDLED WITH/Q' Gemfile.lock # hack to fix bundler issue: allow different versions of bundler to work
       - bundle
-      - JETS_ENV=test bundle exec rspec
-  post_build:
-    commands:
-      - bash -c 'if [ "$CODEBUILD_BUILD_SUCCEEDING" == "0" ]; then exit 1; fi'
-      - export JETS_AGREE=yes
       - bundle exec jets deploy $JETS_ENV
