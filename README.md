@@ -25,3 +25,7 @@ You'll need to use your own value.
 ## Notes
 
 The [.codebuild/project.rb](.codebuild/project.rb) uses a Docker image that has ruby, node, and yarn already installed.  If you prefer to use another image, update the `linux_image` setting, and update your `buildspec.yml` accordingly. IE: Install the necessary packages.
+
+## Other Examples
+
+* [aws/codebuild/ruby image](https://github.com/tongueroo/jets-codebuild/tree/aws-codebuild-ruby-2-5-3): Uses the AWS CodeBuild image. Since node and yarn is not preinstalled it is installed with in buildspec.yml.
