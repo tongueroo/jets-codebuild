@@ -1,11 +1,11 @@
-# Jets Project
+# Jets with Codebuild
 
-This README would normally document whatever steps are necessary to get the application up and running.
+This is an example of a Jets Project set up with AWS CodeBuild using the [codebuild tool](https://codebuild.cloud/).
 
-Things you might want to cover:
+## Usage
 
-* Dependencies
-* Configuration
-* Database setup
-* How to run the test suite
-* Deployment instructions
+    git clone https://github.com/tongueroo/jets-codebuild demo
+
+    cb deploy demo # creates the CodeBuild Project
+    cb start demo  # starts a build
+    cb start demo -b mybranch  # starts a build on a specific branch. remember to git push
