@@ -28,4 +28,5 @@ The [.codebuild/project.rb](.codebuild/project.rb) uses a Docker image that has 
 
 ## Other Examples
 
+* [separate unit and deploy projects](https://github.com/tongueroo/jets-codebuild/tree/separate-unit-and-deploy): Shows how to create separate codebuild projects for unit tests and deploy using the same repo. Some advantages: decoupling the 2 proccess and limit the AWS IAM permissions to create resources only on the deploy project.
 * [aws/codebuild/ruby image](https://github.com/tongueroo/jets-codebuild/tree/aws-codebuild-ruby-2-5-3): Uses the AWS CodeBuild image. Since node and yarn is not preinstalled it is installed with in buildspec.yml.
