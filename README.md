@@ -1,5 +1,7 @@
 # Jets with Codebuild
 
+[![BoltOps Badge](https://img.boltops.com/boltops/badges/boltops-badge.png)](https://www.boltops.com)
+
 This is an example of a Jets project set up with CI. It uses the [cody tool](https://cody.run/) to set up an AWS CodeBuild project.  There's also a [codebuild jets example](https://codebuild.cloud/docs/examples/jets/).
 
 ## Usage
