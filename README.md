@@ -38,10 +38,6 @@ Deploy:
     cb start demo --type deploy  # starts a build
     cb start demo --type deploy -b separate-unit-and-deploy  # starts a build on a specific branch. remember to git push
 
-## Notes
-
-The [.codebuild/project.rb](.codebuild/project.rb) uses a Docker image that has ruby, node, and yarn already installed.  If you prefer to use another image, update the `linux_image` setting, and update your `buildspec.yml` accordingly. IE: Install the necessary packages.
-
 ## Other Examples
 
 * [separate unit and deploy projects](https://github.com/tongueroo/jets-cody-demo/tree/separate-unit-and-deploy): Shows how to create separate codebuild projects for unit tests and deploy using the same repo. Some advantages: decoupling the 2 proccess and limit the AWS IAM permissions to create resources only on the deploy project.
